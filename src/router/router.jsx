@@ -11,6 +11,7 @@ import Loading from "../components/Loading/Loading";
 import PrivateRoute from "./PrivateRoute";
 import Rider from "../pages/Rider/Rider";
 import ResetPassword from "../pages/AuthRelated/ResetPassword/ResetPassword";
+import SendParcel from "../pages/SendParcel/SendParcel";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,14 @@ const router = createBrowserRouter([
         element : <PrivateRoute>
           <Rider></Rider>
         </PrivateRoute>
+      },
+      {
+        path: "/send_parcel",
+        element : <PrivateRoute>
+          <SendParcel></SendParcel>
+        </PrivateRoute>,
+         loader: () =>
+          fetch("/warehouses.json").then((response) => response.json()),
       },
     ],
   },
