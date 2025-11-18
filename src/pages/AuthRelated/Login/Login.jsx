@@ -26,6 +26,8 @@ const Login = () => {
         console.log(error);
       });
   };
+
+
   return (
     <div className="shadow-2xl p-8 rounded-2xl">
       <h1 className="text-4xl font-bold my-3">Welcome Back</h1>
@@ -55,9 +57,9 @@ const Login = () => {
             <p className="text-red-500">Email is required</p>
           )}
           <div>
-            <a className="link link-hover text-xl">Forgot password?</a>
+            <Link to={'/reset_password'}  className="link link-hover text-xl">Forgot password?</Link>
           </div>
-          <button className="btn bg-primary mt-4 text-xl">Register</button>
+          <button className="btn bg-primary mt-4 text-xl">Login</button>
         </fieldset>
       </form>
       <Link state={location?.state} to={"/register"} className="text-xl">

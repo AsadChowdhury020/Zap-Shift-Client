@@ -125,9 +125,9 @@ const Register = () => {
               one number, and one special character.
             </p>
           )}
-          <div>
+          {/* <div>
             <a className="link link-hover text-xl">Forgot password?</a>
-          </div>
+          </div> */}
           <button className="btn bg-primary mt-4 text-xl">Register</button>
         </fieldset>
       </form>

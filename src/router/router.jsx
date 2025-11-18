@@ -10,6 +10,7 @@ import Register from "../pages/AuthRelated/Register/Register";
 import Loading from "../components/Loading/Loading";
 import PrivateRoute from "./PrivateRoute";
 import Rider from "../pages/Rider/Rider";
+import ResetPassword from "../pages/AuthRelated/ResetPassword/ResetPassword";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         path: "/register",
         Component: Register,
       },
+      {
+        path : '/reset_password',
+        Component : ResetPassword
+      }
     ],
   },
 ]);

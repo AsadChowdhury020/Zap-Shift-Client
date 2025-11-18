@@ -31,6 +31,7 @@ const SocialLogin = () => {
           height="16"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
+          className="rounded-full"
         >
           <g>
             <path d="m0 0H512V512H0" fill="#fff"></path>
